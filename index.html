@@ -3,14 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<title>menu</title>
-	<link rel="stylesheet" href="../src/reset.css">
+	<link rel="stylesheet" href="reset.css">
 	<style>
-		.div{height: 40px;line-height: 40px;font-size: 20px;color: #08c;padding: 0 5px;}
-		.div a{color: #000;}
-		.div a:hover{text-decoration: underline;}
+		.container{margin: 50px;border: 1px solid #aaa;}
+		.container .item + .item{border-top: 1px solid #aaa;}
+		.item{min-height: 40px;line-height: 40px;font-size: 20px;color: #333;padding: 0 10px;}
+		.item h3{display: inline-block;}
+		.item h3 span{font-size: 12px;color: #999;}
+		.item a{color: #000;}
+		.item a:hover{text-decoration: underline;color: #f00;}
+		.href{font-size: 14px;margin-left: 30px;width: 450px;}
+		.href span{display: inline-block;width: 80px;text-align: right;}
+		.item .href + .href{border-top: 1px dotted #aaa;}
 	</style>
 </head>
 <body>
-<div class="div">tab: <a href="https://godzhang.github.io/tab/" target="_blank">https://godzhang.github.io/tab/</a></div>
+
+<div class="container">
+	<div class="item">
+		<h3>选项卡: </h3>
+		<a href="https://godzhang.github.io/tab/" target="_blank">https://godzhang.github.io/tab/</a>
+	</div>
+	<div class="item">
+		<h3>焦点图: </h3>
+		<a href="https://godzhang.github.io/focus/" target="_blank">https://godzhang.github.io/focus/</a>
+	</div>
+	<div class="item">
+		<h3>瀑布流：</h3>
+		<a href="https://godzhang.github.io/waterfall/" target="_blank">https://godzhang.github.io/waterfall/</a>
+	</div>
+	<div class="item">
+		<h3>星级评分：<span>(跟随慕课网视频教程做的)</span></h3>
+		<div class="href"><span>文档说明：</span><a href="https://github.com/Godzhang/starRating" target="_blank">https://github.com/Godzhang/starRating</a></div>
+		<div class="href"><span>第1种方法：</span><a href="https://godzhang.github.io/starRating/method-1/" target="_blank">https://godzhang.github.io/starRating/method-1/</a></div>
+		<div class="href"><span>第2种方法：</span><a href="https://godzhang.github.io/starRating/method-2/" target="_blank">https://godzhang.github.io/starRating/method-2/</a></div>
+		<div class="href"><span>第3种方法：</span><a href="https://godzhang.github.io/starRating/method-3/" target="_blank">https://godzhang.github.io/starRating/method-3/</a></div>
+		<div class="href"><span>第4种方法：</span><a href="javascript:;" target="_blank">未实现</a></div>
+		<div class="href"><span>第5种方法：</span><a href="https://godzhang.github.io/starRating/method-5/" target="_blank">https://godzhang.github.io/starRating/method-5/</a></div>
+		<div class="href"><span>第6种方法：</span><a href="javascript:;" target="_blank">未实现</a></div>		
+	</div>
+</div>
+
+
+
 </body>
 </html>
